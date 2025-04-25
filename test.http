@@ -1,0 +1,38 @@
+###
+GET http://localhost:4004/odata/v4/amazon-web-services/Authors
+
+
+###
+GET http://localhost:4004/odata/v4/amazon-web-services/BooksAndAuthors
+
+###
+POST http://localhost:4004/odata/v4/amazon-web-services/BooksAndAuthors
+Content-Type: application/json 
+
+{
+    "book_id":"1"
+}
+
+
+###
+POST http://localhost:4004/odata/v4/amazon-web-services/Books
+Content-Type: application/json 
+
+{
+    "book_id" : "12",
+    "book_name" : "Dogs"
+}
+
+
+###
+PATCH  http://localhost:4004/odata/v4/amazon-web-services/Books/3
+Content-Type: application/json 
+
+{
+    "book_name":"Last of Us"
+}
+
+###
+DELETE http://localhost:4004/odata/v4/amazon-web-services/Books/3
+
+
