@@ -28,6 +28,9 @@ modules:
       - name: bookstoreapp-db
       - name: bookstoreapp-connectivity
       - name: bookstoreapp-destination
+      - name : sak-autoscaler
+        parameters:
+          path: ./autoscaler.json
      
 
   - name: bookstoreapp-db-deployer
@@ -85,4 +88,8 @@ resources:
     parameters:
       service: destination
       service-plan: lite
-  
+  - name : sak-autoscaler
+    type : org.cloudfoundry.managed-service
+    parameters:
+      service: autoscaler
+      service-plan: standard
