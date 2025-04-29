@@ -28,9 +28,7 @@ modules:
       - name: bookstoreapp-db
       - name: bookstoreapp-connectivity
       - name: bookstoreapp-destination
-      - name : sak-autoscaler
-        parameters:
-          path: ./autoscaler.json
+     
      
 
   - name: bookstoreapp-db-deployer
